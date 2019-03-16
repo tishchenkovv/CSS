@@ -1,0 +1,70 @@
+body {
+    background-color: grey;
+}
+
+.wrapper {
+
+    width: 400px;
+    height: 400px;
+    margin: 200px auto;
+    perspective: 800px;
+
+}
+
+.cube {
+
+    width: inherit;
+    height: inherit;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective-origin: 50% 50%
+}
+
+.side {
+    box-sizing: border-box;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    text-align: center;
+    line-height: 400px;
+    color: white;
+    font-size: 2em;
+    text-transform: uppercase;
+    background-color: black;
+    opacity: .7;
+    border: 5px #DCE59C solid;
+}
+
+#front {
+
+    transform: translateZ(200px);
+
+}
+
+#back {
+
+    transform: rotateY(-180deg) translateZ(200px);
+
+}
+
+#right {
+
+    transform: rotateY(90deg) translateZ(200px);
+
+}
+
+#left {
+
+    transform: rotateY(-90deg) translateZ(200px);
+
+}
+
+#top {
+
+    transform: rotateX(90deg) translateZ(200px)
+}
+
+#bottom {
+
+    transform: rotateX(-90deg) translateZ(200px);
+}
