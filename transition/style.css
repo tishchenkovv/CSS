@@ -1,0 +1,131 @@
+* {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+
+}
+
+.menu {
+
+    display: block;
+
+}
+
+ul {
+
+    list-style: none;
+    margin: 30px auto;
+    padding: 0px;
+    opacity: .5;
+
+
+}
+
+ul:hover
+{
+
+opacity: 1;
+transition: opacity 1s ease-in-out;
+
+}
+
+li
+{
+
+width: 38px;
+height: 45px;
+overflow: hidden;
+
+}
+
+li:hover
+{
+
+width: 200px;
+transition-property: all;
+transition-duration: .2s;
+transition-timing-function: ease-in-out;
+
+}
+
+li a {
+
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    background: gray;
+    margin: 1px;
+    color: white;
+    padding-left: 15px;
+    cursor: pointer;
+    position: relative;
+    text-indent: 22px;
+    transition-property: all;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+
+}
+
+#item1::before {
+
+    content: '';
+    z-index: 1;
+    position: absolute;
+    display: block;
+    height: 30px;
+    width: 30px;
+    background: url("./image/icons8-self-service-kiosk-30.png") center;
+    top: 5px;
+    left: 3px;
+
+}
+
+#item2::before {
+
+    content: '';
+    z-index: 1;
+    position: absolute;
+    display: block;
+    height: 30px;
+    width: 30px;
+    background: url("./image/icons8-gift-30.png") center;
+    top: 5px;
+    left: 3px;
+
+}
+
+#item3::before {
+
+    content: '';
+    z-index: 1;
+    position: absolute;
+    display: block;
+    height: 30px;
+    width: 30px;
+    background: url("./image/icons8-paper-money-30.png") center;
+    top: 5px;
+    left: 3px;
+
+}
+
+
+#title {
+
+    text-align: center;
+
+}
+
+body {
+    background: url("./background/prism.png");
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+
+    background: #8dd7fc;
+
+}
